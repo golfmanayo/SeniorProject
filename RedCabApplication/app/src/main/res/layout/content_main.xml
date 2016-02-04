@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EF5350">
+
+    <LinearLayout
+        android:id="@+id/account_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/login_nine_patch"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <!-- username entry -->
+        <LinearLayout
+            android:id="@+id/usernameview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <!-- password entry -->
+        <LinearLayout
+            android:id="@+id/passwordview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernameview"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="16dip"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:password="true"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dip"
+            android:background="#1a1a1a"
+            android:text="LOGIN "
+            android:textColor="@android:color/primary_text_dark" />
+
+        <Button
+            android:id="@+id/signupButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="1dip"
+            android:background="#1a1a1a"
+            android:text="SIGN UP "
+            android:textColor="@android:color/primary_text_dark" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
