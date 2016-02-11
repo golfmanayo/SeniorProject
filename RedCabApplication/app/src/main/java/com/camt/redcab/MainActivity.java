@@ -45,8 +45,11 @@ public class MainActivity extends AppCompatActivity {
                 final String username = edtUsername.getText().toString();
                 final String password = edtPassword.getText().toString();
 
-                Toast toast = Toast.makeText(getApplicationContext(),username+" "+password,Toast.LENGTH_LONG);
+                Toast toast = Toast.makeText(getApplicationContext(), username + " " + password, Toast.LENGTH_LONG);
                 toast.show();
+
+                Intent i = new Intent(getApplicationContext(),MapsActivity.class);
+                startActivity(i);
             }
         });
     }

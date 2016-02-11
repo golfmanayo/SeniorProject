@@ -65,7 +65,7 @@ public class RegistrationActivity extends AppCompatActivity {
             // not use by gof
             switch (position) {
                 case 0:
-                    return new PessengerRegistrationFragment();
+                    return new PassengerRegistrationFragment();
                 default:
                     return new DriverRegistrationFragment();
 
