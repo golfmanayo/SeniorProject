@@ -6,7 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.EditText;
-import android.widget.Toast;
+
+import com.camt.redcab.Maps.MapActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
                 final String username = edtUsername.getText().toString();
                 final String password = edtPassword.getText().toString();
 
-                Toast toast = Toast.makeText(getApplicationContext(), username + " " + password, Toast.LENGTH_LONG);
-                toast.show();
+                //Toast toast = Toast.makeText(getApplicationContext(), username + " " + password, Toast.LENGTH_LONG);
+                //toast.show();
 
-                Intent i = new Intent(getApplicationContext(),MapsActivity.class);
+                Intent i = new Intent(getApplicationContext(),MapActivity.class);
                 startActivity(i);
             }
         });
